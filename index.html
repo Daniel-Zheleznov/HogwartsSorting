@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <form>
+    <script src="index.js"></script>
+    
+    <form id="questions" style="margin-left: 20%; margin-right: 20%;">
         <!--
             Hufflepuff - honest, empathetic
             Gryffindor - bold, direct
             Ravenclaw  - logical, cautious
             Slytherin  - Opportunistic, pragmatic
         -->
+
+        <dialog id="whoami-dialog">
+        </dialog>
 
         <label>You find a wallet on the ground with a large sum of money inside. What do you do?</label>
         <br/>
@@ -107,6 +112,6 @@
             <br/>   
         </fieldset>
 
-        <input type="button" id="submit-button" value="Who am I?"/>
+        <input type="button" id="submit-button" value="Who am I?" style="width: 30%; margin-left: 35%; margin-top: 20px;" onclick="whoami()"/>
     </form>
 </html>
